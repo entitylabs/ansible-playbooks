@@ -1,0 +1,6 @@
+---
+
+- hosts: master
+  become: true
+  roles:
+    - { role: k8s-yum-upgrade ,  tags: [k8s-yum-upgrade] }
